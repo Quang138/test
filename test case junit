@@ -1,0 +1,23 @@
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class MainTest {
+
+    // Các ca kiểm thử cho phương thức checkEvenOdd()
+    @Test
+    public void testCheckEvenOdd() {
+        assertEquals("1 là số lẻ.", Main.checkEvenOdd(1));
+        assertEquals("2 là số chẵn.", Main.checkEvenOdd(2));
+        assertEquals("3 là số lẻ.", Main.checkEvenOdd(3));
+        assertEquals("4 là số chẵn.", Main.checkEvenOdd(4));
+        assertEquals("5 là số lẻ.", Main.checkEvenOdd(5));
+    }
+
+    // Các ca kiểm thử cho phương thức calculateSum()
+    @Test
+    public void testCalculateSum() {
+        assertEquals(3, Main.calculateSum(1, 2));
+        assertEquals(7, Main.calculateSum(3, 4));
+        // Thêm các ca kiểm thử khác tại đây
+    }
+}
